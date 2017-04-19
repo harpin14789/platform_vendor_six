@@ -22,7 +22,14 @@ $(call inherit-product-if-exists, vendor/gapps/prebuilt.mk)
 # Main Required Packages
 PRODUCT_PACKAGES += \
     Launcher3 \
-    LiveWallpapersPicker
+    Camera2 \
+    Calendar \
+    CalendarWidget \
+    Eleven \
+    messaging \
+    OmniStyle \
+    LiveWallpapersPicker \
+    Gallery2
 
 # Include explicitly to work around Facelock issues
 PRODUCT_PACKAGES += \
@@ -33,4 +40,13 @@ PRODUCT_PACKAGES += \
     Busybox \
     ThemeInterfacer \
     OmniStyle \
+    Substratum \
     Turbo
+
+# ThemeInterfacer sig check override
+# Default value is false
+# Setting to true so that debug APKs get recognized without toggling the
+# switch in Advanced Settings.
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.interfacer.buildtype.check=true
+
