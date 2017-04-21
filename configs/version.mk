@@ -14,11 +14,11 @@
 
 #SiX versioning
 ifndef SIX_BUILD_TYPE
-    SIX_BUILD_TYPE := OMS.v8.0-R3Ds
+    SIX_BUILD_TYPE := OMS.v1.0-R3Ds
 endif
 
 SIX_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(SIX_BUILD_TYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.pure.version=$(SIX_VERSION)
+    ro.six.version=$(SIX_VERSION)
 

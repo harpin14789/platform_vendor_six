@@ -43,6 +43,14 @@ PRODUCT_PACKAGES += \
     Substratum \
     Turbo
 
+# DU Utils Library
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
 # ThemeInterfacer sig check override
 # Default value is false
 # Setting to true so that debug APKs get recognized without toggling the
