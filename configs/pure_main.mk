@@ -27,7 +27,6 @@ PRODUCT_PACKAGES += \
     CalendarWidget \
     Eleven \
     messaging \
-    OmniStyle \
     LiveWallpapersPicker \
     Gallery2
 
