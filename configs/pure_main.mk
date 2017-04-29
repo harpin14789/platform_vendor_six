@@ -40,7 +40,8 @@ PRODUCT_PACKAGES += \
     ThemeInterfacer \
     OmniStyle \
     Substratum \
-    Turbo
+    Turbo \
+    Wakeblock
 
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
