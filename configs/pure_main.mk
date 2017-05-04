@@ -26,6 +26,7 @@ PRODUCT_PACKAGES += \
     Calendar \
     CalendarWidget \
     Eleven \
+    SixOTA \
     messaging \
     LiveWallpapersPicker \
     Gallery2
