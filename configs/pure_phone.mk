@@ -18,6 +18,14 @@ include vendor/pure/configs/pure_main.mk
 include vendor/pure/configs/system_additions.mk
 include vendor/pure/configs/version.mk
 
+# Global APN list
+PRODUCT_COPY_FILES += \
+    vendor/pure/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# Selective SPN list
+PRODUCT_COPY_FILES += \
+    vendor/pure/prebuilt/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
+
 # Telephony packages
 PRODUCT_PACKAGES += \
     Stk \
