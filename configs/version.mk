@@ -14,7 +14,7 @@
 
 #SiX versioning
 ifndef SIX_BUILD_TYPE
-    SIX_BUILD_TYPE := OMS.v2.8-USER
+    SIX_BUILD_TYPE := OMS.v2.8-OFFICIAL
 endif
 
 SIX_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)-$(SIX_BUILD_TYPE)
